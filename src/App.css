@@ -1,0 +1,14 @@
+.main{
+  background-image: url(./assests/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.font1 {
+  font-family: "Comfortaa", serif;
+  font-size: 30px;
+  font-weight: 700  ;
+  font-style: normal;
+}
