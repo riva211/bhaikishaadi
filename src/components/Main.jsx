@@ -3,31 +3,43 @@ import "../App.css"
 import logo from "../assests/Logo.png"
 import names from "../assests/names.png"
 import scroll from "../assests/scroll.png"
+import Countdown from './Countdown'
 import curve from "../assests/curve.png"
-
 
 function Main() {
   return (
-    <div className=" overflow-x-hidden  "  >
+    <div className="overflow-x-hidden">
+        {/* hero code */}
+        <div className="main h-[110vh] ">
+            <div className="w-screen flex flex-col justify-start items-center">
+                <img className="mb-[-13px]" src={logo} alt="Logo here" /> 
+                <div className="font1 text-white">THE WEDDING OF</div>
+                <img src={names} alt="rahil and tara" />
+                <div className="font1 text-white"> . 18 02 2025 . </div>
+                <img src={scroll} alt="" />
+              </div>
+            
 
-        {/* hero code  */}
-    <div className="main  " >
-        <div className="w-screen flex flex-col justify-start items-center 	 " >
-        <img className="mb-[-13px]" src={logo} alt="Logo here" /> 
-       <div className="font1 text-white" >THE WEDDING OF</div>
-       <img src={names} alt="rahil and tara" />
-       <div className="font1 text-white" > . 09 02 2025 . </div>
-       <img className="mt-2 mb-12" src={scroll} alt="scroll down" />
-       <div className="h-[50px] ">
+            <div className="h-screen  rounded-[100vh]   ">
 
-       </div>
+           
+            {/* <img src={curve} className="  bg-cover bg-center w-screen  " alt="" /> */}
+
+            <div className='font2  flex justify-center  flex-col items-center bg-white' >
+          <div className="text-center"  >
+              We Are Getting Married
+            
+            </div>
+            <div className=" abeezee-regular">
+
+            <Countdown/>
+            </div>
+           </div>
+        </div>
+           </div>
         </div>
       
-    </div>
-    <div className="flex justify-center  ">
-<img className="absolute md:top-[96%] lg:top-[97%] sm:top-[90%] w-screen " src={curve} alt="" />
-    </div>
-    </div>
+
   )
 }
 
